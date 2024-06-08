@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden !important;
+}
+.listBox {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  margin-top: 5px;
+  
+}
+
+.businessListPage a{
+  text-decoration: none;
+}
+
+.businessListPage a:hover{
+  background-color: #d0f3d1;
+}
+.listBox img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.listDesc {
+  line-height: 30%;
+  margin-left: 5px;
+  margin-top: -2px;
+}
+
+.listDesc .desc,
+.listDesc .date {
+  color: darkgrey;
+}
+
+.listDesc .status .fa-circle {
+  font-size: 10px;
+}
+
+.create {
+  width: 50px;
+  height: 50px;
+  background-color: #4caf4f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 40px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+.create a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.postsForm {
+  margin-top: 25px;
+}
+
+.postsForm .col-auto{
+    margin-bottom: 25px;;
+}
+
+/* placeholder */
+
+:focus {
+  outline: none;
+}
+
+.col-auto {
+  position: relative;
+} /* necessary to give position: relative to parent. */
+input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.effect {
+  border: 0;
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  position: relative;
+  background: transparent;
+}
+.effect ~ .focus-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: transparent;
+  transition: 0.4s;
+  z-index: -1;
+}
+.effect:focus ~ .focus-bg,
+.has-content.effect ~ .focus-bg {
+  transition: 0.4s;
+  width: 100%;
+  background-color: #ededed;
+}
+.effect ~ label {
+  position: absolute;
+  left: 14px;
+  width: 100%;
+  top: 10px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.effect:focus ~ label,
+.has-content.effect ~ label {
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  color: #333;
+  transition: 0.3s;
+}
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+
+/* aminities */
+.aminity .col-sm-4,
+.aminity .col-xs-4
+{
+   margin-bottom:20px;
+}
+
+.aminity span{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+.aminiBox{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding:20px;
+    text-align: center;
+    box-shadow: 0 0 10px #ccc;
+   
+
+}
+
+
+
+
+input[type="checkbox"][id^="myCheckbox"] {
+    display: none;
+  }
+
+  label {
+    /* border: 1px solid #fff; */
+    /* padding: 10px; */
+    display: block;
+    position: relative;
+    /* margin: 10px; */
+    cursor: pointer;
+  }
+  
+  label:before {
+    /* background-color: white; */
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    /* border: 1px solid grey; */
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 22px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  
+  label img {
+    width: 35px;
+    height: 35px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+
+ 
+  
+  :checked + label {
+    /* border-color: #ddd; */
+  }
+  
+  :checked +  .lab:before {
+    content: "✓";
+    background-color: #4caf4f;
+    transform: scale(1);
+  }
+  
+  :checked + label img {
+    transform: scale(0.9);
+    /* box-shadow: 0 0 5px #333; */
+    z-index: -1;
+  }
+
+  .subBtn{
+    background-color: #4caf4f;
+    width: 100%;
+    color:white;
+  }
+
+  /* slider */
+  
+
+ 
+.btnsCreatePost{
+  position: fixed;
+  bottom: 75px;
+  left: 256px;
+  
+}
+
+.btnsCreatePost .btn1{
+  margin-bottom: 5px;
+}
+
+.btn1 a, .btn2 a{
+  width: 105px;
+}
+  
+.back{
+  width: 100%;
+  height: 35px;
+  background-color: #4caf4f;
+  position: fixed;
+  z-index: 1;
+}
+
+.back a{
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+
+.jobType{
+  display: flex;
+  justify-content:space-around;
+  
+
+}
+
+.radioBtn{
+  display: flex;
+  justify-content: start;
+}
+
+.radioBtn label{
+  margin-top: 8px;
+  padding-left:5px;
+  color:rgb(48, 43, 43);
+
+  font-weight: 500;
+}
+
+#full:checked{
+  background-color: #4caf4f;
+}
+
+.topTex{
+  margin-top: 5px;
+  color: darkgray;
+}
+
+.tables td{
+  border: 1px solid  lightgray;
+  padding: 7px;
+  width: 50%;
+}
+
+.businessTab td{
+  border: 1px solid  lightgray;
+  padding: 7px;
+  width: 100%;
+}
+
+.tables img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.businessTab img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+
+}
+
+.businessListPage{
+  margin-top: 40px;
+}
+
+.postsForm{
+  margin-top: 70px;
+ 
+}
+
+.listunit{
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+
+}
+
+.titlestore{
+  display: flex;
+  /* justify-content:space-between; */
+
+}
+
+.titleandrent{
+  display: flex;
+  justify-content:space-between;
+
+}
+
+.titleandrent span{
+  margin-top: 20px;
+  font-size: 18px;
+  
+  
+}
+
+.descArea{
+  padding: 10px;
+  margin-top: -25px;
+  
+}
+
+.descArea a{
+  text-decoration: none;
+  color: #333;
+}
+
+.storeSec{
+  padding: 10px;
+  margin-top: -50px;
+
+}
+.storeSec a{
+  text-decoration: none;
+  color: #333;
+
+}
+
+.storeSec:hover{
+  background-color: #d0f3d1;
+  
+}
+
+.descArea:hover{
+  background-color: #d0f3d1;
+ 
+}
+
+.heading{
+  margin-top: 45px;
+  text-align: center;
+  padding: 5px;
+}
+
+.discount{
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left: 280px;
+  top:-23px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.banner{
+  margin-top: 37px;
+}
+
+.cupon{
+  margin-bottom: 20px;
+}
+
+.pvcy{
+  background-image: url('/images/pvcyBG.jpg');
+}
+.margin-top{
+  margin-top: 40px;
+}
+
+.nodatafound{
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;;
+}
